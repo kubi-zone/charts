@@ -1,0 +1,25 @@
+apiVersion: v1
+entries:
+  kubizone:
+  - apiVersion: v2
+    appVersion: 0.1.0
+    created: "2023-11-10T13:48:59.868197242Z"
+    description: A Helm chart for Kubernetes
+    digest: a2df47c81ebf3fb701ceb3fddc26ecf03d0e87703cb1c0451f4d1e73b731c789
+    name: kubizone
+    type: application
+    urls:
+    - https://github.com/kubi-zone/charts/releases/download/kubizone-0.1.0/kubizone-0.1.0.tgz
+    version: 0.1.0
+  zonefile-coredns:
+  - apiVersion: v2
+    appVersion: 0.1.0
+    created: "2023-11-10T13:49:00.013979673Z"
+    description: A Helm chart for Kubernetes
+    digest: 161e294b2c7114c77fb6de1ded3d17624f2bcec587756d24f26d0c4938944b2f
+    name: zonefile-coredns
+    type: application
+    urls:
+    - https://github.com/kubi-zone/charts/releases/download/zonefile-coredns-0.1.0/zonefile-coredns-0.1.0.tgz
+    version: 0.1.0
+generated: "2023-11-10T13:49:00.013984773Z"
