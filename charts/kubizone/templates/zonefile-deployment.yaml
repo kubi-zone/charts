@@ -26,22 +26,6 @@ spec:
       serviceAccountName: {{ include "zonefile.serviceAccountName" . }}
       securityContext:
         {{- toYaml .Values.zonefile.podSecurityContext | nindent 8 }}
-      {{- if .Values.dangerRecreateCrds }}
-      initContainers:
-        - name: crds
-          securityContext:
-            {{- toYaml .Values.zonefile.securityContext | nindent 12 }}
-          {{- if .Values.zonefile.image.tag }}
-          image: "{{ .Values.zonefile.image.repository }}:{{ .Values.zonefile.image.tag }}"
-          {{- else }}
-          image: "{{ .Values.zonefile.image.repository }}:v{{ .Chart.AppVersion }}"
-          {{- end }}
-          imagePullPolicy: {{ .Values.zonefile.image.pullPolicy }}
-          resources:
-            {{- toYaml .Values.zonefile.resources | nindent 12 }}
-          args:
-            - danger-recreate-crds
-      {{- end }}
       containers:
         - name: controller
           securityContext:

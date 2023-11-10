@@ -5,13 +5,11 @@
 nameOverride: ""
 fullnameOverride: ""
 
-dangerRecreateCrds: false
-
 logLevel: DEBUG
 
 kubizone:
   image:
-    repository: ghcr.io/mathiaspius/kubizone/kubizone
+    repository: ghcr.io/kubi-zone/kubizone
     pullPolicy: Always
     # Overrides the image tag whose default is the chart appVersion.
     tag: ""
@@ -69,7 +67,7 @@ zonefile:
 
   imagePullSecrets: []
   image:
-    repository: ghcr.io/mathiaspius/kubizone/zonefile
+    repository: ghcr.io/kubi-zone/kubizone
     pullPolicy: Always
     # Overrides the image tag whose default is the chart appVersion.
     tag: ""
