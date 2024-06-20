@@ -13,6 +13,23 @@ entries:
     version: 0.1.0
   - apiVersion: v2
     appVersion: 0.1.0
+    created: "2024-06-20T11:35:09.889619116Z"
+    dependencies:
+    - alias: cloudflare
+      condition: cloudflare.enabled
+      name: kubizone-cloudflare
+      repository: https://charts.kubi.zone/
+      version: 0.2.0
+    description: Kubizone Controller
+    digest: 498eefd94f54d5d1b2d4a610cfe0727b6c83c677e4099deab9e603ab7636dff9
+    icon: https://avatars.githubusercontent.com/u/142626985
+    name: kubizone
+    type: application
+    urls:
+    - https://github.com/kubi-zone/charts/releases/download/kubizone-0.1.0-2/kubizone-0.1.0-2.tgz
+    version: 0.1.0-2
+  - apiVersion: v2
+    appVersion: 0.1.0
     created: "2024-06-20T11:24:41.065482067Z"
     dependencies:
     - condition: cloudflare.enabled
@@ -61,4 +78,4 @@ entries:
     urls:
     - https://github.com/kubi-zone/charts/releases/download/zonefile-coredns-0.1.0/zonefile-coredns-0.1.0.tgz
     version: 0.1.0
-generated: "2024-06-20T11:24:41.065493559Z"
+generated: "2024-06-20T11:35:09.889639464Z"
