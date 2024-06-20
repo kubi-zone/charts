@@ -13,6 +13,17 @@ entries:
     version: 0.1.0
   kubizone-cloudflare:
   - apiVersion: v2
+    appVersion: 0.2.0
+    created: "2024-06-20T09:04:19.495478704Z"
+    description: Cloudflare integration for Kubizone ecosystem
+    digest: 14044d2224c14bf90fc49b189bd9ff77efacdc06ea6a915fb6fcd7a02bcf2207
+    icon: https://avatars.githubusercontent.com/u/142626985
+    name: kubizone-cloudflare
+    type: application
+    urls:
+    - https://github.com/kubi-zone/charts/releases/download/kubizone-cloudflare-0.2.0/kubizone-cloudflare-0.2.0.tgz
+    version: 0.2.0
+  - apiVersion: v2
     appVersion: 0.1.0
     created: "2024-06-20T08:19:31.217014591Z"
     description: Cloudflare integration for Kubizone ecosystem
@@ -34,4 +45,4 @@ entries:
     urls:
     - https://github.com/kubi-zone/charts/releases/download/zonefile-coredns-0.1.0/zonefile-coredns-0.1.0.tgz
     version: 0.1.0
-generated: "2024-06-20T08:19:31.217024971Z"
+generated: "2024-06-20T09:04:19.495493221Z"
