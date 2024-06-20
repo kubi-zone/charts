@@ -1,0 +1,6 @@
+dependencies:
+- name: kubizone-cloudflare
+  repository: https://charts.kubi.zone/
+  version: 0.2.0
+digest: sha256:da2e81689fb0c8b3f5a694791d9c178d3d6d64c923dd8b222d3146a62b8dcf43
+generated: "2024-06-20T13:20:16.767056575+02:00"

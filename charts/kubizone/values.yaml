@@ -15,7 +15,7 @@ kubizone:
     tag: ""
 
   args:
-  - reconcile
+    - reconcile
 
   imagePullSecrets: []
 
@@ -42,63 +42,7 @@ kubizone:
     allowPrivilegeEscalation: false
     capabilities:
       drop:
-      - ALL
-    readOnlyRootFilesystem: true
-    runAsNonRoot: true
-    runAsUser: 65203
-
-  resources:
-    limits:
-      cpu: 20m
-      memory: 32Mi
-    requests:
-      cpu: 5m
-      memory: 16Mi
-
-  nodeSelector: {}
-
-  tolerations: []
-
-  affinity: {}
-
-zonefile:
-  enable: false
-  replicaCount: 1
-
-  imagePullSecrets: []
-  image:
-    repository: ghcr.io/kubi-zone/kubizone
-    pullPolicy: Always
-    # Overrides the image tag whose default is the chart appVersion.
-    tag: ""
-
-  args:
-  - reconcile
-
-  serviceAccount:
-    # Specifies whether a service account should be created
-    create: true
-    # Annotations to add to the service account
-    annotations: {}
-    # The name of the service account to use.
-    # If not set and create is true, a name is generated using the fullname template
-    name: ""
-
-  podAnnotations: {}
-
-  podSecurityContext:
-    seccompProfile:
-      type: "RuntimeDefault"
-    runAsNonRoot: true
-    runAsUser: 65203
-    runAsGroup: 65203
-    fsGroup: 65203
-
-  securityContext:
-    allowPrivilegeEscalation: false
-    capabilities:
-      drop:
-      - ALL
+        - ALL
     readOnlyRootFilesystem: true
     runAsNonRoot: true
     runAsUser: 65203
