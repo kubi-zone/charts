@@ -60,3 +60,13 @@ kubizone:
   tolerations: []
 
   affinity: {}
+#
+#
+# Integrations are included in this chart, and can be instantiated as seen below:
+#
+#
+# # Deploy the CloudFlare integration
+# cloudflare:
+#   enabled: true
+#   apiKey:
+#     token: abcabcabcabcabcabcabcabcabcabcabcabcabca
