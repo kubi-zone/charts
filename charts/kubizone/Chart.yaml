@@ -1,6 +1,7 @@
 apiVersion: v2
 name: kubizone
 description: Kubizone Controller
+icon: https://avatars.githubusercontent.com/u/142626985
 
 # A chart can be either an 'application' or a 'library' chart.
 #
