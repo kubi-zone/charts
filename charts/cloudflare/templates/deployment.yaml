@@ -39,6 +39,20 @@ spec:
             {{- toYaml .Values.resources | nindent 12 }}
           args:
             {{- toYaml .Values.args | nindent 12 }}
+          env:
+            - name: CF_API_KEY
+              valueFrom:
+                secretKeyRef:
+            {{- if .Values.apiKey.existingSecret }}
+                  name: {{ .Values.apiKey.existingSecret.name }}
+                  key: {{ .Values.apiKey.existingSecret.key }}
+            {{- else }}
+                  name: {{ include "helpers.fullname" . }}-cf-token
+                  key: token
+            {{- end }}
+          {{- with .Values.env }}
+            {{- toYaml . | nindent 12}}
+          {{- end }}
       {{- with .Values.nodeSelector }}
       nodeSelector:
         {{- toYaml . | nindent 8 }}

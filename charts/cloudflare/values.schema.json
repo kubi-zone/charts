@@ -21,8 +21,43 @@
         },
         "apiKey": {
             "description": "Cloudflare API Key",
-            "type": "string",
-            "pattern": "^[a-zA-Z0-9_-]{40}$"
+            "type": "object",
+            "oneOf": [
+                {
+                    "type": "object",
+                    "required": [
+                        "token"
+                    ],
+                    "properties": {
+                        "token": {
+                            "type": "string",
+                            "pattern": "^[a-zA-Z0-9_-]{40}$"
+                        }
+                    },
+                    "additionalProperties": false
+                },
+                {
+                    "type": "object",
+                    "properties": {
+                        "existingSecret": {
+                            "type": "object",
+                            "required": [
+                                "name",
+                                "key"
+                            ],
+                            "properties": {
+                                "name": {
+                                    "type": "string"
+                                },
+                                "key": {
+                                    "type": "string"
+                                }
+                            }
+                        }
+                    },
+                    "additionalProperties": false
+                }
+            ]
         }
     }
 }

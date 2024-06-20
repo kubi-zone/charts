@@ -14,7 +14,13 @@ image:
   tag: ""
 args:
   - reconcile
-apiKey: null
+# CloudFlare API Key.
+# Either 'token' or 'existingSecret' must be specified
+apiKey:
+  # token: ""
+  # existingSecret:
+  #   name: my-secret
+  #   key: api-token
 imagePullSecrets: []
 serviceAccount:
   # Specifies whether a service account should be created
