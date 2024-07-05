@@ -2,6 +2,23 @@ apiVersion: v1
 entries:
   kubizone:
   - apiVersion: v2
+    appVersion: 0.3.6
+    created: "2024-07-05T12:09:43.129821989Z"
+    dependencies:
+    - alias: cloudflare
+      condition: cloudflare.enabled
+      name: kubizone-cloudflare
+      repository: https://charts.kubi.zone/
+      version: 0.2.0
+    description: Kubizone Controller
+    digest: 76051ae342dbe848348986776ea2adcfb02dc3e0831b766836384f83239b485b
+    icon: https://avatars.githubusercontent.com/u/142626985
+    name: kubizone
+    type: application
+    urls:
+    - https://github.com/kubi-zone/charts/releases/download/kubizone-0.3.6/kubizone-0.3.6.tgz
+    version: 0.3.6
+  - apiVersion: v2
     appVersion: 0.1.0
     created: "2023-11-10T13:48:59.868197242Z"
     description: A Helm chart for Kubernetes
@@ -67,6 +84,18 @@ entries:
     urls:
     - https://github.com/kubi-zone/charts/releases/download/kubizone-cloudflare-0.1.0/kubizone-cloudflare-0.1.0.tgz
     version: 0.1.0
+  kubizone-externaldns:
+  - apiVersion: v2
+    appVersion: 0.4.1
+    created: "2024-07-05T12:09:43.223163813Z"
+    description: ExternalDNS webhook integration for Kubizone ecosystem
+    digest: 395a4765daabcf27053400ccbc43f12c92b28721b199a5b4750c5859712b0c8c
+    icon: https://avatars.githubusercontent.com/u/142626985
+    name: kubizone-externaldns
+    type: application
+    urls:
+    - https://github.com/kubi-zone/charts/releases/download/kubizone-externaldns-0.4.1/kubizone-externaldns-0.4.1.tgz
+    version: 0.4.1
   zonefile-coredns:
   - apiVersion: v2
     appVersion: 0.1.0
@@ -78,4 +107,4 @@ entries:
     urls:
     - https://github.com/kubi-zone/charts/releases/download/zonefile-coredns-0.1.0/zonefile-coredns-0.1.0.tgz
     version: 0.1.0
-generated: "2024-06-20T11:35:09.889639464Z"
+generated: "2024-07-05T12:09:43.223191605Z"
