@@ -31,10 +31,3 @@ dependencies:
     version: "0.2.0"
     repository: "https://charts.kubi.zone/"
     condition: cloudflare.enabled
-
-  # ExternalDNS webhook integration
-  - name: kubizone-externaldns
-    alias: externaldns
-    version: "0.4.1"
-    repository: "https://charts.kubi.zone/"
-    condition: externaldns.enabled
