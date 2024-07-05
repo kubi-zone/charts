@@ -19,6 +19,28 @@ entries:
     - https://github.com/kubi-zone/charts/releases/download/kubizone-0.3.6/kubizone-0.3.6.tgz
     version: 0.3.6
   - apiVersion: v2
+    appVersion: 0.3.6
+    created: "2024-07-05T12:22:31.559528246Z"
+    dependencies:
+    - alias: cloudflare
+      condition: cloudflare.enabled
+      name: kubizone-cloudflare
+      repository: https://charts.kubi.zone/
+      version: 0.2.0
+    - alias: externaldns
+      condition: externaldns.enabled
+      name: kubizone-externaldns
+      repository: https://charts.kubi.zone/
+      version: 0.4.1
+    description: Kubizone Controller
+    digest: 6800e9c76c480b744069899927489db0f51ab389d6beb6b09ad2cceb55b7a729
+    icon: https://avatars.githubusercontent.com/u/142626985
+    name: kubizone
+    type: application
+    urls:
+    - https://github.com/kubi-zone/charts/releases/download/kubizone-0.3.6-1/kubizone-0.3.6-1.tgz
+    version: 0.3.6-1
+  - apiVersion: v2
     appVersion: 0.1.0
     created: "2023-11-10T13:48:59.868197242Z"
     description: A Helm chart for Kubernetes
@@ -107,4 +129,4 @@ entries:
     urls:
     - https://github.com/kubi-zone/charts/releases/download/zonefile-coredns-0.1.0/zonefile-coredns-0.1.0.tgz
     version: 0.1.0
-generated: "2024-07-05T12:09:43.223191605Z"
+generated: "2024-07-05T12:22:31.559564313Z"
