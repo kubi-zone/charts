@@ -60,6 +60,13 @@ kubizone:
   tolerations: []
 
   affinity: {}
+
+# Explicitly disable integrations: https://github.com/helm/helm/issues/10296
+cloudflare:
+  enabled: false
+
+externaldns:
+  enabled: false
 #
 #
 # Integrations are included in this chart as dependencies, and can be instantiated as seen below:
