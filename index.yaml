@@ -41,6 +41,28 @@ entries:
     - https://github.com/kubi-zone/charts/releases/download/kubizone-0.3.6-1/kubizone-0.3.6-1.tgz
     version: 0.3.6-1
   - apiVersion: v2
+    appVersion: 0.3.6
+    created: "2024-07-05T13:04:26.059366644Z"
+    dependencies:
+    - alias: cloudflare
+      condition: cloudflare.enabled
+      name: kubizone-cloudflare
+      repository: https://charts.kubi.zone/
+      version: 0.2.0
+    - alias: externaldns
+      condition: externaldns.enabled
+      name: kubizone-externaldns
+      repository: https://charts.kubi.zone/
+      version: 0.4.1
+    description: Kubizone Controller
+    digest: e214f26c848caa4ed4a18c44b18dfa1357daa9eb90f03ffec78abfb9196cdff5
+    icon: https://avatars.githubusercontent.com/u/142626985
+    name: kubizone
+    type: application
+    urls:
+    - https://github.com/kubi-zone/charts/releases/download/kubizone-0.3.6-1/kubizone-0.3.6-1.tgz
+    version: 0.3.6-1
+  - apiVersion: v2
     appVersion: 0.1.0
     created: "2023-11-10T13:48:59.868197242Z"
     description: A Helm chart for Kubernetes
@@ -108,6 +130,17 @@ entries:
     version: 0.1.0
   kubizone-externaldns:
   - apiVersion: v2
+    appVersion: 0.5.0
+    created: "2024-07-05T13:04:26.244652755Z"
+    description: ExternalDNS webhook integration for Kubizone ecosystem
+    digest: 5cf7aa607e8c51a73f598ee24ed15a3064078301c30018976d1d75f9395a9b82
+    icon: https://avatars.githubusercontent.com/u/142626985
+    name: kubizone-externaldns
+    type: application
+    urls:
+    - https://github.com/kubi-zone/charts/releases/download/kubizone-externaldns-0.5.0/kubizone-externaldns-0.5.0.tgz
+    version: 0.5.0
+  - apiVersion: v2
     appVersion: 0.4.1
     created: "2024-07-05T12:09:43.223163813Z"
     description: ExternalDNS webhook integration for Kubizone ecosystem
@@ -129,4 +162,4 @@ entries:
     urls:
     - https://github.com/kubi-zone/charts/releases/download/zonefile-coredns-0.1.0/zonefile-coredns-0.1.0.tgz
     version: 0.1.0
-generated: "2024-07-05T12:22:31.559564313Z"
+generated: "2024-07-05T13:04:26.244688953Z"
