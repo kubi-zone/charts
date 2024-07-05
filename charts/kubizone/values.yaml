@@ -74,6 +74,7 @@ kubizone:
 #
 # Deploy the ExternalDNS integration
 # externaldns:
+#   enabled: true
 #   webhookEndpoint: "http://localhost:8888"
 #   sidecars:
 #     - name: hetzner-webhook
